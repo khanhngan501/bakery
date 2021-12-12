@@ -168,7 +168,7 @@
         <div class="heading-section ftco-animate mb-5">
           <span class="subheading">This is our secrets</span>
           <h2 class="mb-4">Perfect Bakery</h2>
-          <p>MagicShop is a sweet (and occasionally savory) shop that's been turning familiar treats upside down and on their heads, shaking up the dessert scene since 2008. Bon Appetit magazine called us "one of the most exciting bakeries in the country." But you can literally just call us MagicShop. We're not big on feeding the hype beast. But we're super into feeding our flavorful treats to those who crave the unexpected.
+          <p>MagicShop is a sweet (and occasionally savory) shop that's been turning familiar treats upside down and on their heads, shaking up the dessert scene since 2008. Bon Appetit magazine called us "one of the most exciting bakeries in the country". But you can literally just call us MagicShop. We're not big on feeding the hype beast. But we're super into feeding our flavorful treats to those who crave the unexpected.
           </p>
         </div>
       </div>

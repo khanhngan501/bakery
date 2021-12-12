@@ -165,7 +165,7 @@
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
            <div class="dbox">
-             <p class="my-shop-inf"><span>Address:</span> 1 Võ Văn Ngân, Linh Chiểu, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam</p>
+             <p class="my-shop-inf"><span>Address:</span>01, Vo Van Ngan Street, Linh Chieu, Thanh pho Thu Duc, Thanh pho Ho Chi Minh, Viet Nam</p>
            </div>
          </div>
          <div class="col-md-3 d-flex">
