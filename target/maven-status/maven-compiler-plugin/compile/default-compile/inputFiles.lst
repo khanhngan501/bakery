@@ -1,3 +1,8 @@
-E:\KhanhNgan\web\main-project\src\main\java\bakery\data\context\DBContext.java
-E:\KhanhNgan\web\main-project\src\main\java\bakery\data\entity\Product.java
-E:\KhanhNgan\web\main-project\src\main\java\bakery\data\dao\DAO.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\context\DBContext.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\entity\Account.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\control\LoginControl.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\entity\Product.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\entity\Category.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\control\ProductControl.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\control\SignUpControl.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\dao\DAO.java

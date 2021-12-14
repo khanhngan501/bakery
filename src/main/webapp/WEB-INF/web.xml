@@ -10,7 +10,27 @@
         </session-timeout>
     </session-config>
     
+<!--    <servlet>
+        <servlet-name>LoadData</servlet-name>
+        <servlet-class>bakery.control.LoadData</servlet-class>
+    </servlet>-->
+    
+    <servlet>
+        <servlet-name>ProductControl</servlet-name>
+        <servlet-class>bakery.control.ProductControl</servlet-class>
+    </servlet>
+  
+<!--    <servlet-mapping>
+        <servlet-name>LoadData</servlet-name>
+        <url-pattern>/LoadData</url-pattern>
+    </servlet-mapping>-->
+    
+    <servlet-mapping>
+        <servlet-name>ProductControl</servlet-name>
+        <url-pattern>/ProductControl</url-pattern>
+    </servlet-mapping>
+    
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>ProductControl</welcome-file>
     </welcome-file-list>
 </web-app>

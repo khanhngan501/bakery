@@ -65,13 +65,15 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="profile-work">
-                        <p>MagicShop Bakery</p>
-                        <a href="index.jsp">HOME</a><br/>
-                        <a href="about.jsp">ABOUT</a><br/>
-                        <a href="menu.jsp">MENU</a><br/>
-                        <a href="reservation.jsp">RESERVATION</a><br/>
-                        <a href="blog.jsp">BLOG</a><br/>
-                        <a href="contact.jsp">CONTACT</a>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="ProductControl?action=home" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="ProductControl?action=about" class="nav-link">About</a></li>
+                            <!-- <li class="nav-item"><a href="./order/order.html" class="nav-link">Order</a></li> -->
+                            <li class="nav-item"><a href="ProductControl?action=menu" class="nav-link">Menu</a></li>
+                            <li class="nav-item"><a href="ProductControl?action=reservation" class="nav-link">Reservation</a></li>
+                            <li class="nav-item"><a href="ProductControl?action=blog" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="ProductControl?action=contact" class="nav-link">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-8">

@@ -18,11 +18,12 @@ public class Product {
     private String img_path_1;
     private String img_path_2;
     private String img_path_3;
+    private String detail_path;
 
     public Product() {
     }
 
-    public Product(int product_id, String product_name, int category_id, String description, double price, double sale_price, String img_path_1, String img_path_2, String img_path_3) {
+    public Product(int product_id, String product_name, int category_id, String description, double price, double sale_price, String img_path_1, String img_path_2, String img_path_3, String detail_path) {
         this.product_id = product_id;
         this.product_name = product_name;
         this.category_id = category_id;
@@ -32,6 +33,7 @@ public class Product {
         this.img_path_1 = img_path_1;
         this.img_path_2 = img_path_2;
         this.img_path_3 = img_path_3;
+        this.detail_path = detail_path;
     }
     
     public int getProduct_id() {
@@ -106,9 +108,19 @@ public class Product {
         this.img_path_3 = img_path_3;
     }
 
+    public String getDetail_path() {
+        return detail_path;
+    }
+
+    public void setDetail_path(String detail_path) {
+        this.detail_path = detail_path;
+    }
+
     @Override
     public String toString() {
-        return "Product{" + "product_id=" + product_id + ", product_name=" + product_name + ", category_id=" + category_id + ", description=" + description + ", price=" + price + ", sale_price=" + sale_price + ", img_path_1=" + img_path_1 + ", img_path_2=" + img_path_2 + ", img_path_3=" + img_path_3 + '}';
+        return "Product{" + "product_id=" + product_id + ", product_name=" + product_name + ", category_id=" + category_id + ", description=" + description + ", price=" + price + ", sale_price=" + sale_price + ", img_path_1=" + img_path_1 + ", img_path_2=" + img_path_2 + ", img_path_3=" + img_path_3 + ", detail_path=" + detail_path + '}';
     }
+
+    
 
 }

@@ -10,27 +10,28 @@
   
 </head>
 <body>
+    <br>
     <h2>Sign In or Sign Up</h2>
-        <div class="container" id="container">
+        <div class="container" id="container" style="width: 795px;max-width: 100%;min-height: 535px;">
             <div class="form-container sign-up-container">
-                <form action="signup">
+                <form action="signup" method="post">
                     <h1>Create Account</h1>
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social"><i class="fab fa-google"></i></a>
-                        <!-- <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                     <span>or use your email for registration</span>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="text" placeholder="Address" />
-                    <input type="text" placeholder="Phone Number" />
-                    <input type="password" placeholder="Password" />
-                    <button>Sign Up</button>
+                    <input name="user" type="text" placeholder="User name" />
+                    <input name="email" type="email" placeholder="Email"/>
+                    <input name="pass" type="password" placeholder="Password"/>
+                    <input name="confirm" type="password" placeholder="Confirm password">
+                    <input name="address" type="text" placeholder="Address" />
+                    <input name="phone" type="text" placeholder="Phone Number"/>
+                    <a href="./checkout.jsp"><button type="submit">Sign Up</button></a>
                 </form>
             </div>
             <div class="form-container sign-in-container">
-                <form action="signin">
+                <form action="signin" method="post">
                     <h1>Sign in</h1>
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -38,10 +39,11 @@
                         <!-- <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                     <span>or use your account</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <p class="text-danger" style="color: #ff4458">${mess}</p>
+                    <input name ="user" type="text" placeholder="User name" />
+                    <input name="pass" type="password" placeholder="Password" />
                     <a href="#">Forgot your password?</a>
-                    <button>Sign In</button>
+                    <a href="./checkout.jsp"><button type="submit">Sign In</button></a>
                 </form>
             </div>
             <div class="overlay-container">
