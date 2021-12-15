@@ -292,7 +292,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="menu-wrap">
                                     <div class="heading-menu text-center ftco-animate">
-                                            <h3><a href="menu.jsp">Breads</a></h3>
+                                            <h3><a href="ProductControl?action=menu">Breads</a></h3>
                                     </div>
                                     <c:forEach items="${ListP1}" var = "o">
                                         <div class="menus d-flex ftco-animate">
@@ -318,7 +318,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="menu-wrap">
                                 <div class="heading-menu text-center ftco-animate">
-                                        <h3><a href="menu.jsp">Cakes</a></h3>
+                                        <h3><a href="ProductControl?action=menu">Cakes</a></h3>
                                 </div>
                                 <c:forEach items="${ListP2}" var = "o">
                                     <div class="menus d-flex ftco-animate">
@@ -344,7 +344,7 @@
                             <div class="col-md-6 col-lg-4">
                                     <div class="menu-wrap">
                                             <div class="heading-menu text-center ftco-animate">
-                                                    <h3><a href="menu.jsp">Cafe &amp; Beverages</a></h3>
+                                                    <h3><a href="ProductControl?action=menu">Cafe &amp; Beverages</a></h3>
                                             </div>
                                             <c:forEach items="${ListP3}" var = "o">
                                                 <div class="menus d-flex ftco-animate">
