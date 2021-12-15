@@ -63,47 +63,46 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container">
-                    <a class="navbar-brand" href="index.jsp">Magic <span>Shop</span></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="oi oi-menu"></span> Menu
-                    </button>
+                <a class="navbar-brand" href="ProductControl?action=home">Magic <span>Shop</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="oi oi-menu"></span> Menu
+                </button>
 
-                    <div class="collapse navbar-collapse" id="ftco-nav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active"><a href="ProductControl?action=home" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a href="ProductControl?action=about" class="nav-link">About</a></li>
-                                <!-- <li class="nav-item"><a href="./order/order.html" class="nav-link">Order</a></li> -->
-                                <li class="nav-item"><a href="ProductControl?action=menu" class="nav-link">Menu</a></li>
-                                <li class="nav-item"><a href="ProductControl?action=reservation" class="nav-link">Reservation</a></li>
-                                <li class="nav-item"><a href="ProductControl?action=blog" class="nav-link">Blog</a></li>
-                                <li class="nav-item"><a href="ProductControl?action=contact" class="nav-link">Contact</a></li>
-                            </ul>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a href="ProductControl?action=home" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="ProductControl?action=about" class="nav-link">About</a></li>
+                            <!-- <li class="nav-item"><a href="./order/order.html" class="nav-link">Order</a></li> -->
+                            <li class="nav-item"><a href="ProductControl?action=menu" class="nav-link">Menu</a></li>
+                            <li class="nav-item"><a href="ProductControl?action=reservation" class="nav-link">Reservation</a></li>
+                            <li class="nav-item"><a href="ProductControl?action=blog" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="ProductControl?action=contact" class="nav-link">Contact</a></li>
+                        </ul>
+                </div>
+                <div id="cart">
+                    <div class="right-content">
+
+                      <div class="dot-inf"></div>
+                        <i class="fas fa-shopping-cart"></i>
+                       </div>
                     </div>
-                    <div id="cart">
-                            <div class="right-content">
-
-                              <div class="dot-inf"></div>
-                              <!-- <a href="#"><i class="fas fa-shopping-cart"></i></a> -->
-                              <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            </div>
 
 
-                            <div id="myModal" class="modal">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                    <h5 class="modal-title">Cart</h5>
-                                    <span class="close">&times;</span>
-                              </div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                                <h5 class="modal-title">Cart</h5>
+                                <span class="close">&times;</span>
+                          </div>
 
-                              <div class="modal-body">
+                          <div class="modal-body">
+                                <div class="cart-row">
+                                  <span class="cart-item cart-header cart-column">Product</span>
+                                  <span class="cart-price cart-header cart-column">Price</span>
+                                  <span class="cart-quantity cart-header cart-column">Quantity</span>
+                                </div>
+                                <div class="cart-items">
                                     <div class="cart-row">
-                                      <span class="cart-item cart-header cart-column">Product</span>
-                                      <span class="cart-price cart-header cart-column">Price</span>
-                                      <span class="cart-quantity cart-header cart-column">Quantity</span>
-                                    </div>
-                                    <div class="cart-items">
-                                      <div class="cart-row">
                                       <div class="cart-item cart-column">
                                             <img class="cart-item-image" src="images/bread-5-detail1.jpg" width="100" height="100">
                                             <span class="cart-item-title">Cheese Roll</span>
@@ -114,7 +113,7 @@
                                             <input class="cart-quantity-input" type="number" value="1">
                                             <button class="modal-btn btn-danger" type="button">Delete</button>
                                       </div>
-                                    </div>
+                                   </div>
                                     <div class="cart-row">
                                       <div class="cart-item cart-column">
                                             <img class="cart-item-image" src="images/bread12-detail1.jpg" width="100" height="100">
@@ -126,27 +125,27 @@
                                             <button class="modal-btn btn-danger" type="button">Delete</button>
                                       </div>
                                     </div>
+                                </div>
 
-                              </div>
-
-                              <div class="cart-total">
-                                    <strong class="cart-total-title">Total:</strong>
-                                    <span class="cart-total-price">87$</span>
-                              </div>
+                                <div class="cart-total">
+                                      <strong class="cart-total-title">Total:</strong>
+                                      <span class="cart-total-price">87$</span>
+                                </div>
 
 
-                              <div class="modal-footer">
+                                <div class="modal-footer">
                                     <button type="button" class="modal-btn btn-secondary close-footer">Close</button>
-                                    <c:if test="${sessionScope.acc == null}">
-                                        <a href="./signIn-signUp.jsp"><button type="button" class="modal-btn btn-primary order">Checkout</button></a>
-                                    </c:if>
+                                      <c:if test="${sessionScope.acc == null}">
+                                          <a href="./signIn-signUp.jsp"><button type="button" class="modal-btn btn-primary order">Checkout</button></a>
+                                      </c:if>
 
-                                    <c:if test="${sessionScope.acc != null}">
-                                        <a href="./checkout.jsp"><button type="button" class="modal-btn btn-primary order">Checkout</button></a>
-                                    </c:if>
-                              </div>
+                                      <c:if test="${sessionScope.acc != null}">
+                                          <a href="./checkout.jsp"><button type="button" class="modal-btn btn-primary order">Checkout</button></a>
+                                      </c:if>
+                                </div>
                             </div>
-                            </div>
+                        </div>
+                    </div>
             </div>
     </nav>
     <!-- END nav -->
@@ -645,3 +644,9 @@
             </div>
     </section>
 <c:import url="/footer.html" />
+<!-- <script>
+    var close_footer = document.getElementsByClassName("close-footer")[0];
+    close_footer.onclick = function () {
+    modal.style.display = "none";
+  };
+</script>-->

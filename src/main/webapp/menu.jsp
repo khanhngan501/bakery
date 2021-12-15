@@ -62,7 +62,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
                 <div class="container">
-                        <a class="navbar-brand" href="index.jsp">Magic <span>Shop</span></a>
+                        <a class="navbar-brand" href="ProductControl?action=home">Magic <span>Shop</span></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="oi oi-menu"></span> Menu
                         </button>
@@ -156,7 +156,7 @@
                     <div class="row no-gutters slider-text align-items-end justify-content-center">
                             <div class="col-md-9 ftco-animate text-center mb-5">
                                     <h1 class="mb-2 bread">Menu</h1>
-                                    <p class="breadcrumbs"><span class="mr-2"><a href="index.jsp">Home <i class="fa fa-chevron-right"></i></a></span> <span>Menu <i class="fa fa-chevron-right"></i></span></p>
+                                    <p class="breadcrumbs"><span class="mr-2"><a href="ProductControl?action=home">Home <i class="fa fa-chevron-right"></i></a></span> <span>Menu <i class="fa fa-chevron-right"></i></span></p>
                             </div>
                     </div>
             </div>

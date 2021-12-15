@@ -23,12 +23,12 @@ public class DBContext {
 //    }
     /*Insert your other code right after this comment*/
     /*Change/update information of your database connection, DO NOT change name of instance variables in this class*/
-    private final String hostName = "localhost";
-    private final String dbName = "bakery";
+    private final String hostName = "us-cdbr-east-05.cleardb.net";
+    private final String dbName = "heroku_4eb7344193bc60a";
     private final String portNumber = "3306";
     private final String instance="";//LEAVE THIS ONE EMPTY IF YOUR SQL IS A SINGLE INSTANCE
-    private final String userID = "root";
-    private final String password = "khanhngan"; 
+    private final String userID = "b938ee1a2bbd43";
+    private final String password = "6cb5e652"; 
     
     public static void main(String[] args) {
          try {

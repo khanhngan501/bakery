@@ -76,20 +76,20 @@
       
       <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
        <div class="container">
-         <a class="navbar-brand" href="../index.jsp">Magic <span>Shop</span></a>
+         <a class="navbar-brand" href="../ProductControl?action=home">Magic <span>Shop</span></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
            <span class="oi oi-menu"></span> Menu
          </button>
       
          <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="../index.jsp" class="nav-link">Home</a></li>
-              <li class="nav-item"><a href="../about.jsp" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="../ProductControl?action=home" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="../ProductControl?action=about" class="nav-link">About</a></li>
               
-              <li class="nav-item active"><a href="../menu.jsp" class="nav-link">Menu</a></li>
-              <li class="nav-item"><a href="../reservation.jsp" class="nav-link">Reservation</a></li>
-              <li class="nav-item"><a href="../blog.jsp" class="nav-link">Blog</a></li>
-              <li class="nav-item "><a href="../contact.jsp" class="nav-link">Contact</a></li>
+              <li class="nav-item active"><a href="../ProductControl?action=menu" class="nav-link">Menu</a></li>
+              <li class="nav-item"><a href="../ProductControl?action=reservation" class="nav-link">Reservation</a></li>
+              <li class="nav-item"><a href="../ProductControl?action=blog" class="nav-link">Blog</a></li>
+              <li class="nav-item "><a href="../ProductControl?action=contact" class="nav-link">Contact</a></li>
             </ul>
           </div>
           
@@ -172,7 +172,7 @@
           <div class="row no-gutters slider-text align-items-end justify-content-center">
             <div class="col-md-9 ftco-animate text-center mb-5">
               <h1 class="mb-2 bread">Product details</h1>
-              <p class="breadcrumbs"><span class="mr-2"><a href="../index.jsp">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="../menu.jsp">Menu <i class="fa fa-chevron-right"></i></a></span> <span>Product Details <i class="fa fa-chevron-right"></i></span></p>
+              <p class="breadcrumbs"><span class="mr-2"><a href="../ProductControl?action=home">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="../ProductControl?action=menu">Menu <i class="fa fa-chevron-right"></i></a></span> <span>Product Details <i class="fa fa-chevron-right"></i></span></p>
               <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.jsp">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact us <i class="fa fa-chevron-right"></i></span></p> -->
             </div>
           </div>
