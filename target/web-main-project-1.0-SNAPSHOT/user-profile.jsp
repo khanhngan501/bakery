@@ -66,13 +66,13 @@
                 <div class="col-md-4">
                     <div class="profile-work">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a href="ProductControl?action=home" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="ProductControl?action=about" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="MainControl?action=home" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="MainControl?action=about" class="nav-link">About</a></li>
                             <!-- <li class="nav-item"><a href="./order/order.html" class="nav-link">Order</a></li> -->
-                            <li class="nav-item"><a href="ProductControl?action=menu" class="nav-link">Menu</a></li>
-                            <li class="nav-item"><a href="ProductControl?action=reservation" class="nav-link">Reservation</a></li>
-                            <li class="nav-item"><a href="ProductControl?action=blog" class="nav-link">Blog</a></li>
-                            <li class="nav-item"><a href="ProductControl?action=contact" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="MainControl?action=menu" class="nav-link">Menu</a></li>
+                            <li class="nav-item"><a href="MainControl?action=reservation" class="nav-link">Reservation</a></li>
+                            <li class="nav-item"><a href="MainControl?action=blog" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="MainControl?action=contact" class="nav-link">Contact</a></li>
                         </ul>
                     </div>
                 </div>

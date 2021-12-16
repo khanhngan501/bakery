@@ -2,36 +2,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Magic Shop - Bakery | Home</title>
-	<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-                
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Magic Shop - Bakery | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/animate.css">
-	
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-	<link rel="stylesheet" href="css/reponsive.css">
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/style.css">
-        
-	<script src="https://kit.fontawesome.com/dd9a768261.js" crossorigin="anonymous"></script>
-	<script src="/js/data.js"></script>
-        <script src ="js/main.js"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/dd9a768261.js" crossorigin="anonymous"></script>
+    <script src="/js/data.js"></script>
+    <script src ="js/main.js"></script>
 
 </head>
 <body>
-    <!--<form action="ProductControl" method="post"></form>-->
-    <%--<jsp:forward page="ProductControl" />--%>
+    <!--<form action="MainControl" method="post"></form>-->
+    <%--<jsp:forward page="MainControl" />--%>
     <div class="wrap">
             <div class="container">
                     <div class="row justify-content-between">
@@ -63,20 +64,20 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container">
-                <a class="navbar-brand" href="ProductControl?action=home">Magic <span>Shop</span></a>
+                <a class="navbar-brand" href="MainControl?action=home">Magic <span>Shop</span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="oi oi-menu"></span> Menu
                 </button>
 
                 <div class="collapse navbar-collapse" id="ftco-nav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><a href="ProductControl?action=home" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="ProductControl?action=about" class="nav-link">About</a></li>
+                            <li class="nav-item active"><a href="MainControl?action=home" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="MainControl?action=about" class="nav-link">About</a></li>
                             <!-- <li class="nav-item"><a href="./order/order.html" class="nav-link">Order</a></li> -->
-                            <li class="nav-item"><a href="ProductControl?action=menu" class="nav-link">Menu</a></li>
-                            <li class="nav-item"><a href="ProductControl?action=reservation" class="nav-link">Reservation</a></li>
-                            <li class="nav-item"><a href="ProductControl?action=blog" class="nav-link">Blog</a></li>
-                            <li class="nav-item"><a href="ProductControl?action=contact" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="MainControl?action=menu" class="nav-link">Menu</a></li>
+                            <li class="nav-item"><a href="MainControl?action=reservation" class="nav-link">Reservation</a></li>
+                            <li class="nav-item"><a href="MainControl?action=blog" class="nav-link">Blog</a></li>
+                            <li class="nav-item"><a href="MainControl?action=contact" class="nav-link">Contact</a></li>
                         </ul>
                 </div>
                 <div id="cart">
@@ -190,29 +191,29 @@
             <div class="container">
                     <div class="row no-gutters">
                             <div class="col-sm-4 p-4 p-md-5 d-flex align-items-center justify-content-center bg-primary">
-                                    <form action="#" class="appointment-form">
+                                    <form action="MainControl?action=booking" class="appointment-form">
                                         <h3 class="mb-3">Book A Table</h3>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                        <input type="name" class="form-control" placeholder="Name">
+                                                    <input name="bookingName" type="name" class="form-control" placeholder="Name">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                        <input type="email" class="form-control" placeholder="Email">
+                                                    <input name="bookingEmail" type="email" class="form-control" placeholder="Email">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Phone">
+                                                    <input name="bookingPhone" type="text" class="form-control" placeholder="Phone">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                         <div class="input-wrap">
                                                                 <div class="icon"><span class="fa fa-calendar"></span></div>
-                                                                <input type="text" class="form-control book_date" placeholder="Check-In">
+                                                                <input name="bookingDate" type="text" class="form-control book_date" placeholder="Check-In">
                                                         </div>
                                                 </div>
                                             </div>
@@ -220,7 +221,7 @@
                                                 <div class="form-group">
                                                         <div class="input-wrap">
                                                                 <div class="icon"><span class="fa fa-clock-o"></span></div>
-                                                                <input type="text" class="form-control book_time" placeholder="Time">
+                                                                <input name="bookingTime" type="text" class="form-control book_time" placeholder="Time">
                                                         </div>
                                                 </div>
                                             </div>
@@ -229,7 +230,7 @@
                                                         <div class="form-field">
                                                                 <div class="select-wrap">
                                                                         <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                                                        <select name="" id="" class="form-control">
+                                                                        <select name="bookingQuantity" id="" class="form-control">
                                                                                 <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">Guest</option>
                                                                                 <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">1</option>
                                                                                 <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">2</option>
@@ -247,7 +248,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
                             </div>
                             <div class="col-sm-8 wrap-about py-5 ftco-animate img" style="background-image: url(images/about.jpg);">
                                     <div class="row pb-5 pb-md-0">
@@ -292,7 +292,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="menu-wrap">
                                     <div class="heading-menu text-center ftco-animate">
-                                            <h3><a href="ProductControl?action=menu">Breads</a></h3>
+                                            <h3><a href="MainControl?action=menu">Breads</a></h3>
                                     </div>
                                     <c:forEach items="${ListP1}" var = "o">
                                         <div class="menus d-flex ftco-animate">
@@ -318,7 +318,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="menu-wrap">
                                 <div class="heading-menu text-center ftco-animate">
-                                        <h3><a href="ProductControl?action=menu">Cakes</a></h3>
+                                        <h3><a href="MainControl?action=menu">Cakes</a></h3>
                                 </div>
                                 <c:forEach items="${ListP2}" var = "o">
                                     <div class="menus d-flex ftco-animate">
@@ -344,7 +344,7 @@
                             <div class="col-md-6 col-lg-4">
                                     <div class="menu-wrap">
                                             <div class="heading-menu text-center ftco-animate">
-                                                    <h3><a href="ProductControl?action=menu">Cafe &amp; Beverages</a></h3>
+                                                    <h3><a href="MainControl?action=menu">Cafe &amp; Beverages</a></h3>
                                             </div>
                                             <c:forEach items="${ListP3}" var = "o">
                                                 <div class="menus d-flex ftco-animate">

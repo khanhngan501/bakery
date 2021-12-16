@@ -2,7 +2,8 @@ bakery\dao\DAO.class
 bakery\entity\Account.class
 bakery\context\DBContext.class
 bakery\control\SignUpControl.class
+bakery\util\MailUtilLocal.class
 bakery\control\LoginControl.class
 bakery\entity\Category.class
-bakery\control\ProductControl.class
 bakery\entity\Product.class
+bakery\control\MainControl.class
