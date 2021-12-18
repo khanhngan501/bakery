@@ -8,6 +8,7 @@ import java.util.Properties;
 import javax.mail.Address;
 import javax.mail.Message;
 import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
@@ -21,11 +22,29 @@ import javax.mail.internet.MimeMessage;
 public class MailUtilLocal {
     public static void SendMail(String to, String from, String subject, 
             String body, boolean bodyIsHTML) throws MessagingException{
+        
+        System.out.println("Preparing to send email");
+        
         Properties props = new Properties();
-        props.put("mail.transport.protocol", "smtp");
-        props.put("mail.smtp.host", "localhost");
-        props.put("mail.smtp.port", 25);
-        Session session = Session.getDefaultInstance(props);
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.socketFactory.port", "587");
+        props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+        props.put("mail.smtp.port", "587");
+        
+        final String myAccountEmail = "bakerymagicshop25@gmail.com";
+        final String password = "magicshop123";
+        
+        //get Session
+        //Session session = Session.getDefaultInstance(props);
+        Session session;
+        session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication(){
+                return new PasswordAuthentication(myAccountEmail, password);
+            }
+        });
         session.setDebug(true);
         
         Message message = new MimeMessage(session);
@@ -42,8 +61,8 @@ public class MailUtilLocal {
         Address toAddress = new InternetAddress(to);
         message.setFrom(fromAddress);
         message.setRecipient(Message.RecipientType.TO, toAddress);
-        
         Transport.send(message);
+        System.out.println("Message sent successfully");
     }
     
 }

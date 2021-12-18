@@ -65,57 +65,7 @@ public class MainControl extends HttpServlet {
             url = "/contact.jsp";
         }
         
-        else{
-            String subscribeEmail = request.getParameter("subscribeEmail");
-        
-            //Confirm Booking Email
-            String bookingName = request.getParameter("bookingName");
-            String bookingEmail = request.getParameter("bookingEmail");
-//            String bookingPhone = request.getParameter("bookingPhone");
-            String bookingDate = request.getParameter("bookingDate");
-            String bookingTime = request.getParameter("bookingTime");
-            String bookingQuantity = request.getParameter("bookingQuantity");
-
-            String to = null;
-            String from = "bakerymagicshop25@gmail.com";
-            String subject = "Welcome to our Magic Shop";
-            String body = null;
-
-            if(action.equals("booking")){
-                to = bookingEmail;
-                body = "Dear " + bookingName + ", \n\n"
-                        + "Thank you for using our bakery service – Magic Shop Bakery.\n"
-                        + "We have pleasure in confirming that we have booked a table for " + bookingQuantity 
-                        + " guests from " + bookingTime + " on " + bookingDate + ".\n"
-                        + "Please contact us if you have any questions or problems.\n"
-                        + "We look forward to your visit.\n\n" 
-                        +"Yours sincerely.";
-            }
-            else if(action.equals("subscribe")){
-                to = subscribeEmail;
-                body = "Dear " + subscribeEmail + ", \n\n"
-                        + "Thank you for using our bakery service – Magic Shop Bakery.\n"
-                        + "We are make sure to send you announcements about new products and promotions.\n"
-                        + "We look forward to your visit.\n"
-                        + "Have a great day and thanks again!\n\n" 
-                        + "Yours sincerely.";
-            }
-            boolean bodyIsHTML = false;
-
-            try {
-                MailUtilLocal.SendMail(to, from, subject, body, bodyIsHTML);
-            } catch (MessagingException e) {
-                String errorMessage
-                        = "ERROR: Unable to send email. "
-                        + "Check Tomcat logs for detail.<br>"
-                        + "NOTE: You may need to configure your system.<br> "
-                        + "ERROE MESSAGE: " + e.getMessage();
-
-                request.setAttribute("errorMessage", errorMessage);
-
-                this.log("Unable to send your email");
-            }
-        }
+        System.out.println("Action:" + action);
         getServletContext().getRequestDispatcher(url).forward(request, response);
     }
 

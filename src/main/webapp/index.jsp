@@ -191,7 +191,7 @@
             <div class="container">
                     <div class="row no-gutters">
                             <div class="col-sm-4 p-4 p-md-5 d-flex align-items-center justify-content-center bg-primary">
-                                    <form action="MainControl?action=booking" class="appointment-form">
+                                    <form action="booking" method="post" class="appointment-form">
                                         <h3 class="mb-3">Book A Table</h3>
                                         <div class="row">
                                             <div class="col-md-12">
@@ -248,6 +248,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </form>
                             </div>
                             <div class="col-sm-8 wrap-about py-5 ftco-animate img" style="background-image: url(images/about.jpg);">
                                     <div class="row pb-5 pb-md-0">
