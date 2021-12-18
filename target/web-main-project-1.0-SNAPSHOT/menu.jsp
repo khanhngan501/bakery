@@ -36,7 +36,7 @@
                 <div class="container">
                         <div class="row justify-content-between">
                                 <div class="col-12 col-md d-flex align-items-center">
-                                        <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+84 792 204 127</a> or <span class="mailus">email us:</span> <a href="#">magicshop@gmail.com</a></p>
+                                        <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+84 792 204 127</a> or <span class="mailus">email us:</span> <a href="#">bakerymagicshop25@gmail.com</a></p>
                                 </div>
                                 <div class="col-12 col-md d-flex justify-content-md-end">
                                         <p class="mb-0">Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00</p>
