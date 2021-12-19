@@ -15,12 +15,10 @@
     
     <main role="main">
         <div class="container mt-4">
-            <form action="checkout" name="frmthanhtoan" method="post"
-                action="#">
-                <input type="hidden" name="kh_tendangnhap" value="dnpcuong">
+            <form action="checkout" name="frmthanhtoan" method="post">
+                <input type="hidden" name="checkoutName" value="${username}">
 
                 <div class="py-5 text-center">
-                    <!-- <i class="fas fa-shipping-fast fa-4x" ></i> -->
                     <i style="color: #e52b34;" class="fa fa-credit-card fa-4x " aria-hidden="true"></i>
                     <h2>Check out</h2>
                     <p class="lead">Please check customer information, cart information before placing an order.</p>
@@ -71,29 +69,29 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <label for="kh_ten">Full Name</label>
-                                <input type="text" class="form-control" name="kh_ten" id="kh_ten"
-                                    value="Le Hoang Mai Ngan" readonly="">
+                                <label for="checkoutName">User Name</label>
+                                <input type="text" class="form-control" name="username" id="kh_ten"
+                                    value="${username}">
                             </div>
                             <div class="col-md-12">
-                                <label for="kh_gioitinh">Sex</label>
-                                <input type="text" class="form-control" name="kh_gioitinh" id="kh_gioitinh" value="Female"
-                                    readonly="">
+                                <label for="usersex">Full Name</label>
+                                <input type="text" class="form-control" name="fullname" id="kh_ten"
+                                    value="${fullname}">
                             </div>
                             <div class="col-md-12">
-                                <label for="kh_diachi">Address</label>
-                                <input type="text" class="form-control" name="kh_diachi" id="kh_diachi"
-                                    value="130 Marianna" readonly="">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" name="checkoutAddress" id="kh_diachi"
+                                    value="${address}">
                             </div>
                             <div class="col-md-12">
-                                <label for="kh_dienthoai">Phone</label>
-                                <input type="text" class="form-control" name="kh_dienthoai" id="kh_dienthoai"
-                                    value="0915659223" readonly="">
+                                <label for="phone">Phone</label>
+                                <input type="text" class="form-control" name="checkoutPhone" id="kh_dienthoai"
+                                    value="${phone}">
                             </div>
                             <div class="col-md-12">
                                 <label for="kh_email">Email</label>
-                                <input type="text" class="form-control" name="kh_email" id="kh_email"
-                                    value="lhmn@gmail.com" readonly="">
+                                <input type="text" class="form-control" name="checkoutEmail" id="kh_email"
+                                    value="${email}">
                             </div>
                             
                         </div>

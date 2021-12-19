@@ -35,15 +35,8 @@ public class UpdateProfile extends HttpServlet {
         String address = request.getParameter("addressup");
         
         HttpSession session = request.getSession();
-        
         int userid = (int) session.getAttribute("userid");
-//        String username = (String) session.getAttribute("username");
-//        String pass = (String) session.getAttribute("pass");
-//        String fullname = (String) session.getAttribute("fullname");
-//        String email = (String) session.getAttribute("email");
-//        String phone = (String) session.getAttribute("phone");
-//        String address = (String) session.getAttribute("address");
-        
+
         DAO dao = new DAO();
         dao.UpdateUser(userid, username, pass, fullname, email, phone, address);
         

@@ -17,11 +17,7 @@
             <div class="form-container sign-up-container">
                 <form action="signup" method="post">
                     <h1>Create Account</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google"></i></a>
-                    </div>
-                    <span>or use your email for registration</span>
+                    
                     <input name="user" type="text" placeholder="User name" />
                     <input name="email" type="email" placeholder="Email"/>
                     <input name="pass" type="password" placeholder="Password"/>
@@ -33,11 +29,7 @@
             </div>
             <div class="form-container sign-in-container">
                 <form action="signin" method="post">
-                    <h1>Sign in</h1>
-                    <div class="social-container">
-                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social"><i class="fab fa-google"></i></a>
-                    </div>
+                    <h1>Sign in</h1><br>
                     <span>or use your account</span>
                     <p class="text-danger" style="color: #ff4458">${mess}</p>
                     <input name ="user" type="text" placeholder="User name" />

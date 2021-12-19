@@ -6,6 +6,7 @@ package bakery.control;
 
 import bakery.util.MailUtilLocal;
 import java.io.IOException;
+import java.util.Random;
 import javax.mail.MessagingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -33,15 +34,20 @@ public class BookingMail extends HttpServlet {
         String bookingDate = request.getParameter("bookingDate");
         String bookingTime = request.getParameter("bookingTime");
         String bookingQuantity = request.getParameter("bookingQuantity");
-
+        
+        Random generate = new Random();
+        int bookingCode = generate.nextInt(99999999);
+        
         String toBooking = bookingEmail;
         String bodyBooking = "Dear " + bookingName + ", \n\n"
                     + "Thank you for using our bakery service – Magic Shop Bakery.\n"
                     + "We have pleasure in confirming that we have booked a table for " + bookingQuantity 
                     + " guests from " + bookingTime + " on " + bookingDate + ".\n"
+                    + "Reservation code: " + bookingCode + ".\n"
+                    + "(Please keep this code to confirm your reservation.)\n\n"
                     + "Please contact us if you have any questions or problems.\n"
                     + "We look forward to your visit.\n\n" 
-                    +"Yours sincerely.";
+                    + "Yours sincerely.";
 
         if(bookingQuantity.equals("1")){
             bodyBooking = "Dear " + bookingName + ", \n\n"
