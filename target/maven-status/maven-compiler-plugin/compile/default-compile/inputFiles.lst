@@ -1,11 +1,13 @@
 E:\KhanhNgan\web\main-project\src\main\java\bakery\context\DBContext.java
-E:\KhanhNgan\web\main-project\src\main\java\bakery\entity\Account.java
-E:\KhanhNgan\web\main-project\src\main\java\bakery\control\LoginControl.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\control\UserControl.java
 E:\KhanhNgan\web\main-project\src\main\java\bakery\control\SubscribeMail.java
 E:\KhanhNgan\web\main-project\src\main\java\bakery\entity\Product.java
-E:\KhanhNgan\web\main-project\src\main\java\bakery\util\MailUtilLocal.java
 E:\KhanhNgan\web\main-project\src\main\java\bakery\control\BookingMail.java
 E:\KhanhNgan\web\main-project\src\main\java\bakery\entity\Category.java
 E:\KhanhNgan\web\main-project\src\main\java\bakery\control\MainControl.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\entity\Account.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\control\LoginControl.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\control\UpdateProfile.java
+E:\KhanhNgan\web\main-project\src\main\java\bakery\util\MailUtilLocal.java
 E:\KhanhNgan\web\main-project\src\main\java\bakery\control\SignUpControl.java
 E:\KhanhNgan\web\main-project\src\main\java\bakery\dao\DAO.java

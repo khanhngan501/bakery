@@ -34,32 +34,40 @@
     <!--<form action="MainControl" method="post"></form>-->
     <%--<jsp:forward page="MainControl" />--%>
     <div class="wrap">
-            <div class="container">
-                    <div class="row justify-content-between">
-                            <div class="col-12 col-md d-flex align-items-center">
-                                    <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+84 792 204 127</a> or <span class="mailus">email us:</span> <a href="#">bakerymagicshop25@gmail.com</a></p>
-                            </div>
-                            <div class="col-12 col-md d-flex justify-content-md-end">
-                                    <p class="mb-0">Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00</p>
-                                    <div class="social-media">
-                                            <p class="mb-0 d-flex">
-                                                    <a href="https://www.facebook.com/dhspkt.hcmute" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                                                    <a href="https://www.facebook.com/dhspkt.hcmute" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                                                    <a href="https://www.facebook.com/dhspkt.hcmute" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+        <div class="container">
+                <div class="row justify-content-between">
+                        <div class="col-12 col-md d-flex align-items-center">
+                                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+84 792 204 127</a> or <span class="mailus">email us:</span> <a href="#">bakerymagicshop25@gmail.com</a></p>
+                        </div>
+                        <div class="col-12 col-md d-flex justify-content-md-end">
+                                <p class="mb-0">Mon - Fri / 9:00-21:00, Sat - Sun / 10:00-20:00</p>
+                                <div class="social-media">
+                                        <p class="mb-0 d-flex">
+                                                <a href="https://www.facebook.com/dhspkt.hcmute" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                                                <a href="https://www.facebook.com/dhspkt.hcmute" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                                                <a href="https://www.facebook.com/dhspkt.hcmute" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
 
-                                            </p>
-                                    </div>
-                            </div>
-                    </div>
-            </div>
-            <div class=" right-content mg-left">
-                    <a href="user-profile.jsp">
-                            <div class="avatar">
-                            <!-- <a href="user-profile.html"></a> -->
-                              <img src="images/customer_1.jpg" alt="" class="avatar-img">
-                            </div>
-                      </a>
-              </div>
+                                        </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        
+        <div class=" right-content mg-left">
+            
+            
+            <c:if test="${sessionScope.acc == null}">
+                <a href="./signIn-signUp.jsp" class="avatar">
+                    <img src="images/customer_1.jpg" alt="" class="avatar-img">
+                </a>
+            </c:if>
+
+            <c:if test="${sessionScope.acc != null}">
+                <a href="./user-profile.jsp" class="avatar">
+                    <img src="images/customer_1.jpg" alt="" class="avatar-img">
+                </a>
+            </c:if>
+        </div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -232,11 +240,11 @@
                                                                         <div class="icon"><span class="fa fa-chevron-down"></span></div>
                                                                         <select name="bookingQuantity" id="" class="form-control">
                                                                                 <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">Guest</option>
-                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">1</option>
-                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">2</option>
-                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">3</option>
-                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">4</option>
-                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="">5</option>
+                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="1">1</option>
+                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="2">2</option>
+                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="3">3</option>
+                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="4">4</option>
+                                                                                <option style="color: rgba(0, 0, 0, 0.7) !important;" value="5">5</option>
                                                                         </select>
                                                                 </div>
                                                         </div>

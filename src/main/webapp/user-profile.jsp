@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
   <title>Magic Shop - Bakery | Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,155 +20,115 @@
 <body>
     
     <div class="container emp-profile">
-        <form method="post">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="profile-img">
-                        <img src="images/customer_1.jpg" alt=""/>
-                        <div class="file btn btn-lg btn-primary">
-                            Change Photo
-                            <input type="file" name="file"/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="profile-head">
-                                <h5>
-                                    Lhmn
-                                </h5>
-                                <h6>
-                                    Customer
-                                </h6>
-                                <!-- <br><br><br><br><br> -->
-                                <!-- <p class="proile-rating">RANKINGS : <span>8/10</span></p> -->
-                                <div class="card-block">
-                                    <ul class="social-link list-unstyled m-l m-t-10">
-                                        <li><a href="https://www.facebook.com/profile.php?id=100008171112369" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="facebook" data-abc="true"><i class="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://twitter.com/bts_twt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="twitter" data-abc="true"><i class="mdi mdi-twitter feather icon-twitter twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.instagram.com/uwuchihahaha/?fbclid=IwAR1ParVEn2-FrUCQ6joTdhlmX4urtE3Xpo59sssnft8PEfsVFiH7Te0VmSg" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="instagram" data-abc="true"><i class="mdi mdi-instagram feather icon-instagram instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                                
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img src="images/customer_1.jpg" alt=""/>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="profile-work">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a href="MainControl?action=home" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="MainControl?action=about" class="nav-link">About</a></li>
-                            <!-- <li class="nav-item"><a href="./order/order.html" class="nav-link">Order</a></li> -->
-                            <li class="nav-item"><a href="MainControl?action=menu" class="nav-link">Menu</a></li>
-                            <li class="nav-item"><a href="MainControl?action=reservation" class="nav-link">Reservation</a></li>
-                            <li class="nav-item"><a href="MainControl?action=blog" class="nav-link">Blog</a></li>
-                            <li class="nav-item"><a href="MainControl?action=contact" class="nav-link">Contact</a></li>
-                        </ul>
+            <div class="col-md-6">
+                <div class="profile-head">
+                            <h5>
+                                ${username}
+                            </h5>
+                            <h6>
+                                Customer
+                            </h6>
+                            <div class="card-block">
+                                <ul class="social-link list-unstyled m-l m-t-10">
+                                    <li><a href="https://www.facebook.com/profile.php?id=100008171112369" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="facebook" data-abc="true"><i class="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://twitter.com/bts_twt" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="twitter" data-abc="true"><i class="mdi mdi-twitter feather icon-twitter twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/uwuchihahaha/?fbclid=IwAR1ParVEn2-FrUCQ6joTdhlmX4urtE3Xpo59sssnft8PEfsVFiH7Te0VmSg" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="instagram" data-abc="true"><i class="mdi mdi-instagram feather icon-instagram instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <form action="profile" method="post">
+                    <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-work">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="MainControl?action=home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="MainControl?action=about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="MainControl?action=menu" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="MainControl?action=reservation" class="nav-link">Reservation</a></li>
+                        <li class="nav-item"><a href="MainControl?action=blog" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="MainControl?action=contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div style="width: 90px">
+                                <label>User Name</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input style="min-width: 75%" name="username" type="text" value="${username}" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="width: 90px">
+                                <label>Password</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input style="min-width: 75%" name="pass" type="password" value="${pass}" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="width: 90px">
+                                <label>Full Name</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input style="min-width: 75%" name="fullname" type="text" value="${fullname}" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="width: 90px">
+                                <label>Email</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input style="min-width: 75%" name="email" type="email" value="${email}" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="width: 90px">
+                                <label>Phone</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input style="min-width: 75%" name="phone" type="text" value="${phone}" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div style="width: 90px">
+                                <label>Address</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input style="min-width: 75%" name="address" type="text" value="${address}" readonly>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="tab-content profile-tab" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>User ID</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Lhmn123</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Name</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Le Hoang Mai Ngan</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Email</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Lhmn@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Phone</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>123 456 7890</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Address</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Hoa Thanh, Tay Ninh</p>
-                                        </div>
-                                    </div>
-                        </div>
-                        <!-- <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Experience</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Expert</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Hourly Rate</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>10$/hr</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Total Projects</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>230</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>English Level</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>Expert</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label>Availability</label>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>6 months</p>
-                                        </div>
-                                    </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label>Your Bio</label><br/>
-                                    <p>Your detail description</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
+            </div>
+        </div>
 </body>
 </html>

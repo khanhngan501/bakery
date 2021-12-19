@@ -39,9 +39,9 @@ public class SignUpControl extends HttpServlet {
             Account a = dao.checkAccountExist(user);
             if (a == null){
                 dao.signup(user, pass, phone, email, phone, address);
-                response.sendRedirect("ProductControl");        }
+                response.sendRedirect("MainControl");        }
             else{
-               response.sendRedirect("signIn-signup.jsp");
+               response.sendRedirect("signIn-signUp.jsp");
             }
         }
     }

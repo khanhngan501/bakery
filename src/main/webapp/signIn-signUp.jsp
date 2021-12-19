@@ -37,7 +37,6 @@
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social"><i class="fab fa-google"></i></a>
-                        <!-- <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                     <span>or use your account</span>
                     <p class="text-danger" style="color: #ff4458">${mess}</p>

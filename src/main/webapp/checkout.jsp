@@ -15,7 +15,7 @@
     
     <main role="main">
         <div class="container mt-4">
-            <form class="needs-validation" name="frmthanhtoan" method="post"
+            <form action="checkout" name="frmthanhtoan" method="post"
                 action="#">
                 <input type="hidden" name="kh_tendangnhap" value="dnpcuong">
 

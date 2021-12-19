@@ -29,7 +29,6 @@ public class BookingMail extends HttpServlet {
         //Confirm Booking Email
         String bookingName = request.getParameter("bookingName");
         String bookingEmail = request.getParameter("bookingEmail");
-//            String bookingPhone = request.getParameter("bookingPhone");
         String bookingDate = request.getParameter("bookingDate");
         String bookingTime = request.getParameter("bookingTime");
         String bookingQuantity = request.getParameter("bookingQuantity");
@@ -43,6 +42,15 @@ public class BookingMail extends HttpServlet {
                     + "We look forward to your visit.\n\n" 
                     +"Yours sincerely.";
 
+        if(bookingQuantity.equals("1")){
+            bodyBooking = "Dear " + bookingName + ", \n\n"
+                    + "Thank you for using our bakery service – Magic Shop Bakery.\n"
+                    + "We have pleasure in confirming that we have booked a table for " + bookingQuantity 
+                    + " guest from " + bookingTime + " on " + bookingDate + ".\n"
+                    + "Please contact us if you have any questions or problems.\n"
+                    + "We look forward to your visit.\n\n" 
+                    +"Yours sincerely."; 
+        }
         
         Boolean bodyIsHTML = false;
         

@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author ADMIN
  */
+
 @WebServlet(name = "SubscribeMail", urlPatterns = {"/subscribe"})
 public class SubscribeMail extends HttpServlet {
 

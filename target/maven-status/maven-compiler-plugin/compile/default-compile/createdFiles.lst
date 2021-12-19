@@ -1,12 +1,14 @@
 bakery\dao\DAO.class
-bakery\entity\Account.class
 bakery\context\DBContext.class
 bakery\control\SubscribeMail.class
 bakery\control\SignUpControl.class
 bakery\util\MailUtilLocal.class
 bakery\control\LoginControl.class
 bakery\entity\Category.class
-bakery\entity\Product.class
 bakery\util\MailUtilLocal$1.class
 bakery\control\BookingMail.class
 bakery\control\MainControl.class
+bakery\entity\Account.class
+bakery\control\UserControl.class
+bakery\entity\Product.class
+bakery\control\UpdateProfile.class

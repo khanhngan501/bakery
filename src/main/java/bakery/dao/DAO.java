@@ -192,7 +192,7 @@ public class DAO {
             rs = ps.executeQuery();
             while(rs.next()){
                 return new Account(
-                        rs.getInt(1),
+                rs.getInt(1),
                 rs.getString(2),
                 rs.getString(3),
                 rs.getString(4),
@@ -222,7 +222,49 @@ public class DAO {
         } catch (Exception e) {
         }
     }
+    public Account checkAccountExistbyUserId(int userid){
+        String query = "select * from user\n"
+                + "where user_id = ?";
+        
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setInt(1, userid);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                return new Account(
+                rs.getInt(1),
+                rs.getString(2),
+                rs.getString(3),
+                rs.getString(4),
+                rs.getString(5),
+                rs.getString(6),
+                rs.getString(7));
+            }
+        } catch (Exception e) {
+        }
+        return null;
+    }
     
+    public  void UpdateUser(int user_id, String username, String pass, String fullname, String email, String phone, String address){
+        String query = "UPDATE user\n" +
+        "set user_name =?, password = ?, fullname = ?,\n" +
+        "email = ?, phone = ?, address = ?\n" +
+        "where user_id = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, username);
+            ps.setString(2, pass);
+            ps.setString(3, fullname);
+            ps.setString(4, email);
+            ps.setString(5, phone);
+            ps.setString(6, address);
+            ps.setInt(7, user_id);
+            ps.executeUpdate();
+        } catch (Exception e) {
+        }
+    }
     public static void main(String[] args) {
         DAO dao = new DAO();
 //        List<Product> listP1 = dao.getProductByCate1("1");

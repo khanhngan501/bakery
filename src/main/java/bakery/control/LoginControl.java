@@ -28,16 +28,25 @@ public class LoginControl extends HttpServlet {
         String password = request.getParameter("pass");
         
         DAO dao = new DAO();
-         Account a = dao.login(username, password);
-         if(a == null){
-             request.setAttribute("mess", "Wrong username or password");
-             request.getRequestDispatcher("signIn-signUp.jsp").forward(request, response);
-         }
-         else{
-            HttpSession session = request.getSession();
-            session.setAttribute("acc", a);
-            request.getRequestDispatcher("checkout.jsp").forward(request, response);
-         }
+        Account a = dao.login(username, password);
+        if(a == null){
+            request.setAttribute("mess", "Wrong username or password");
+            request.getRequestDispatcher("signIn-signUp.jsp").forward(request, response);
+        }
+        else{
+           HttpSession session = request.getSession();
+           session.setAttribute("acc", a);
+           
+           session.setAttribute("userid", a.getUser_id());
+           session.setAttribute("username", a.getUser_name());
+           session.setAttribute("pass", a.getPassword());
+           session.setAttribute("fullname", a.getFullname());
+           session.setAttribute("email", a.getEmail());
+           session.setAttribute("phone", a.getPhone());
+           session.setAttribute("address", a.getAddress());
+           
+           request.getRequestDispatcher("index.jsp").forward(request, response);
+        }
     }
 
     @Override
