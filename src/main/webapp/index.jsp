@@ -252,7 +252,7 @@
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                        <input type="submit" value="Book A Table Now" class="btn btn-white py-3 px-4">
+                                                    <input type="submit" value="Book A Table Now" class="btn btn-white py-3 px-4">
                                                 </div>
                                             </div>
                                         </div>

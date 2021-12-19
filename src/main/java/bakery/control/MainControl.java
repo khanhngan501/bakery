@@ -64,7 +64,9 @@ public class MainControl extends HttpServlet {
         else if(action.equals("contact")){
             url = "/contact.jsp";
         }
-        
+        else if(action.equals("login")){
+            url = "/signIn-signUp.jsp";
+        }
         System.out.println("Action:" + action);
         getServletContext().getRequestDispatcher(url).forward(request, response);
     }

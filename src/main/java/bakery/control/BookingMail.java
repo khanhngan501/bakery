@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -54,11 +55,21 @@ public class BookingMail extends HttpServlet {
         
         Boolean bodyIsHTML = false;
         
-        try {
+        HttpSession session = request.getSession();
+        
+        String username = (String) session.getAttribute("username");
+        
+        if(username == null){
+            url = "/signIn-signUp.jsp";
+        }
+        else{
+            try {
             MailUtilLocal.SendMail(toBooking, from, subject, bodyBooking, bodyIsHTML);
         } catch (MessagingException e) {
             System.out.println("Unable to send your email");
         }
+        }
+        
         getServletContext().getRequestDispatcher(url).forward(request, response);
     }
 
