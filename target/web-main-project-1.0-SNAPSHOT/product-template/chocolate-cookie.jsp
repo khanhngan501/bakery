@@ -63,13 +63,17 @@
           </div>
         </div>
         <div class=" right-content mg-left">
-          <a href="../user-profile.jsp">
-            <div class="avatar">
-              <!-- <a href="user-profile.html"></a> -->
-              <img src="../images/customer_1.jpg" alt="" class="avatar-img">
-            </div>
-          </a>
-            
+            <c:if test="${sessionScope.acc == null}">
+                <a href="../signIn-signUp.jsp" class="avatar">
+                    <img src="../images/customer_1.jpg" alt="" class="avatar-img">
+                </a>
+            </c:if>
+
+            <c:if test="${sessionScope.acc != null}">
+                <a href="../user-profile.jsp" class="avatar">
+                    <img src="../images/customer_1.jpg" alt="" class="avatar-img">
+                </a>
+            </c:if>
         </div>
     </div>
 

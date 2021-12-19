@@ -50,6 +50,11 @@
                     </ul>
                 </div>
             </div>
+            <div class="col-md-2">
+                <a href="user-profile.jsp">
+                    <input type="submit" class="profile-edit-btn" name="btnCancel" value="Cancel"/>
+                </a>
+            </div>
         </div>
 
         <div class="row">
